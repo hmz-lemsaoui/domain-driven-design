@@ -30,6 +30,6 @@ public class User : Entity
     public static User Create(Email email, Name name, bool hasPublicProfile)
     {
         var user = new User(Guid.NewGuid(), email, name, hasPublicProfile);
-
+        return user;
     }
 }

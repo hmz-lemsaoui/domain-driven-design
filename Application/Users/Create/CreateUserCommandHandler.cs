@@ -10,7 +10,7 @@ using System.Windows.Input;
 
 namespace Application.Users.Create;
 
-internal class CreateUserCommandHandler : ICommandHandler<CreateUserCommand, Guid>
+public class CreateUserCommandHandler : ICommandHandler<CreateUserCommand, Guid>
 {
     private readonly IUserRepository _userRepository;
     private readonly IUnitOfWork _unitOfWork;

@@ -1,5 +1,5 @@
 using Domain.Users;
-using System.ComponentModel.DataAnnotations;
+using FluentAssertions;
 
 namespace Domain.UnitTests.Users;
 
@@ -13,6 +13,8 @@ public class NameTest
         Name Action() => new(value);
 
         // Assert 
+        FluentActions.Invoking(Action).Should().ThrowExactly<ArgumentException>()
+            .Which.ParamName.Should().Be("value");
 
     }
 }
