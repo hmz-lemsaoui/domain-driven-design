@@ -7,5 +7,5 @@ using System.Threading.Tasks;
 
 namespace Application.Users.Create;
 
-internal sealed record CreateUserCommand(string Email, string Name, bool HasPublicProfile)
+public sealed record CreateUserCommand(string Email, string Name, bool HasPublicProfile)
     : ICommand<Guid>;
