@@ -1,0 +1,57 @@
+# .NET build and runtime directories
+bin/
+obj/
+
+# Visual Studio files
+.vs/
+*.user
+*.suo
+*.sln.docstates
+
+# Resharper
+_ReSharper*/
+
+# NuGet packages
+packages/
+
+# User-specific files
+*.userprefs
+*.suo
+*.cache
+*.resharper
+
+# Build results
+*.dll
+*.exe
+*.pdb
+*.dll.config
+*.cache
+*.log
+*.jfm
+*.deploy
+[Tt]est[Rr]esult*
+
+# MSTest test Results
+[Mm]stest.???.xml
+
+# Entity Framework migration files
+*.edmx.diagram
+*.tlog
+*.diff
+*.bak
+*.bak.sql
+
+# Publish profiles
+*.pubxml
+*.publishproj
+
+# Roslyn
+*.ide
+
+# Rider
+.idea/
+*.sln.iml
+
+# Windows folder attributes
+Desktop.ini
+thumbs.db
